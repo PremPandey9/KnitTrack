@@ -5,7 +5,8 @@ import { OrderItem } from "@/types/dashboard";
 import { Card, CardHeader } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { ProgressBar } from "@/components/ui/ProgressBar";
-import { EyeIcon } from "@/components/icons/Icons";
+import { EyeIcon, DelayAlertIcon } from "@/components/icons/Icons";
+import { DelayRiskSummary } from "@/components/dashboard/DelayRiskSummary";
 
 interface OrdersTableProps {
   orders: OrderItem[];
@@ -13,6 +14,12 @@ interface OrdersTableProps {
   selectedFilter: string;
   onFilterChange: (status: "all" | "green" | "amber" | "red") => void;
   onSelectOrder?: (order: OrderItem) => void;
+  error?: {
+    code?: string;
+    message: string;
+    hint?: string | null;
+  } | null;
+  isLoading?: boolean;
 }
 
 export function OrdersTable({
@@ -21,6 +28,8 @@ export function OrdersTable({
   selectedFilter,
   onFilterChange,
   onSelectOrder,
+  error = null,
+  isLoading = false,
 }: OrdersTableProps) {
   const [selectedPo, setSelectedPo] = useState<string | null>(null);
 
@@ -98,11 +107,64 @@ export function OrdersTable({
           </thead>
 
           <tbody className="divide-y divide-slate-100 text-slate-700">
-            {filteredOrders.length === 0 ? (
+            {isLoading ? (
+              [1, 2, 3].map((n) => (
+                <tr key={`skeleton-${n}`} className="animate-pulse">
+                  <td className="py-4 px-4 sm:px-6">
+                    <div className="h-4 bg-slate-200 rounded w-28 mb-1.5" />
+                    <div className="h-3 bg-slate-100 rounded w-20" />
+                  </td>
+                  <td className="py-4 px-4">
+                    <div className="h-4 bg-slate-200 rounded w-36 mb-1.5" />
+                    <div className="h-3 bg-slate-100 rounded w-24" />
+                  </td>
+                  <td className="py-4 px-4">
+                    <div className="h-2 bg-slate-200 rounded-full w-full mb-1" />
+                    <div className="h-3 bg-slate-100 rounded w-16" />
+                  </td>
+                  <td className="py-4 px-4">
+                    <div className="h-6 bg-slate-200 rounded w-20" />
+                  </td>
+                  <td className="py-4 px-4">
+                    <div className="h-6 bg-slate-200 rounded-full w-20" />
+                  </td>
+                  <td className="py-4 px-4 text-right">
+                    <div className="h-6 bg-slate-200 rounded w-12 ml-auto" />
+                  </td>
+                </tr>
+              ))
+            ) : error ? (
+              <tr>
+                <td colSpan={6} className="py-12 text-center">
+                  <div className="max-w-md mx-auto space-y-2">
+                    <div className="inline-flex p-2.5 rounded-full bg-rose-50 text-rose-600 border border-rose-200">
+                      <DelayAlertIcon className="w-5 h-5" />
+                    </div>
+                    <p className="text-sm font-semibold text-slate-900">
+                      Unable to Load Orders from Supabase
+                    </p>
+                    <p className="text-xs text-rose-700 bg-rose-50 px-3 py-2 rounded-lg border border-rose-200 font-mono text-left break-words">
+                      {error.message} {error.code ? `(${error.code})` : ""}
+                    </p>
+                    {error.hint && (
+                      <p className="text-[11px] text-slate-500 text-left bg-slate-50 p-2 rounded border border-slate-200">
+                        <strong>Hint:</strong> {error.hint}
+                      </p>
+                    )}
+                  </div>
+                </td>
+              </tr>
+            ) : filteredOrders.length === 0 ? (
               <tr>
                 <td colSpan={6} className="py-12 text-center text-slate-400">
-                  <p className="text-sm font-medium">No production orders found matching criteria.</p>
-                  <p className="text-xs text-slate-400 mt-1">Try resetting the filter or search query.</p>
+                  <div className="max-w-xs mx-auto space-y-1">
+                    <p className="text-sm font-medium text-slate-700">No production orders found</p>
+                    <p className="text-xs text-slate-400">
+                      {searchQuery || selectedFilter !== "all"
+                        ? "No orders match the selected filter or search criteria."
+                        : "There are no orders recorded in the Supabase database yet."}
+                    </p>
+                  </div>
                 </td>
               </tr>
             ) : (
@@ -153,9 +215,7 @@ export function OrdersTable({
 
                     {/* Status Badge */}
                     <td className="py-3.5 px-4">
-                      <Badge status={order.status}>
-                        {order.statusLabel}
-                      </Badge>
+                        {order.delayRisk ? <div className="min-w-[220px]"><DelayRiskSummary risk={order.delayRisk} compact /></div> : <Badge status={order.status}>{order.statusLabel}</Badge>}
                     </td>
 
                     {/* Action */}

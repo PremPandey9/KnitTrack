@@ -1,4 +1,4 @@
-import { OrderItem, MetricSummary, DeadlineItem, DailyProductionStat } from "@/types/dashboard";
+import { OrderItem, MetricSummary } from "@/types/dashboard";
 
 export const METRICS_DATA: MetricSummary = {
   totalOrders: 24,
@@ -20,7 +20,7 @@ export const RECENT_ORDERS_DATA: OrderItem[] = [
     status: "green",
     statusLabel: "On Track",
     currentStage: "Sewing",
-    deliveryDate: "Nov 14, 2026",
+    deliveryDate: "November 20, 2026",
   },
   {
     id: "ord-2",
@@ -32,7 +32,7 @@ export const RECENT_ORDERS_DATA: OrderItem[] = [
     status: "amber",
     statusLabel: "At Risk",
     currentStage: "Quality Check",
-    deliveryDate: "Nov 07, 2026",
+    deliveryDate: "November 12, 2026",
   },
   {
     id: "ord-3",
@@ -44,7 +44,7 @@ export const RECENT_ORDERS_DATA: OrderItem[] = [
     status: "red",
     statusLabel: "Delayed",
     currentStage: "Dyeing",
-    deliveryDate: "Nov 05, 2026",
+    deliveryDate: "November 28, 2026",
   },
   {
     id: "ord-4",
@@ -70,59 +70,4 @@ export const RECENT_ORDERS_DATA: OrderItem[] = [
     currentStage: "Sewing",
     deliveryDate: "Nov 21, 2026",
   },
-];
-
-export const UPCOMING_DEADLINES_DATA: DeadlineItem[] = [
-  {
-    id: "dl-1",
-    poNumber: "C-PO-0488",
-    client: "Company C",
-    style: "Kids Printed Tee",
-    dueDate: "Tomorrow (Nov 5)",
-    daysRemaining: 1,
-    stage: "Dyeing Batch Re-run",
-    urgency: "critical",
-    bottleneckReason: "Dye shade variance holding batch",
-  },
-  {
-    id: "dl-2",
-    poNumber: "B-PO-88240",
-    client: "Company B",
-    style: "Men's Polo",
-    dueDate: "In 3 Days (Nov 7)",
-    daysRemaining: 3,
-    stage: "Button Hole Stitching",
-    urgency: "warning",
-    bottleneckReason: "Accessory trim delivery delayed",
-  },
-  {
-    id: "dl-3",
-    poNumber: "B-PO-88213",
-    client: "Company B",
-    style: "Men's Crew Neck Tee",
-    dueDate: "In 10 Days (Nov 14)",
-    daysRemaining: 10,
-    stage: "Main Sewing Line 04",
-    urgency: "normal",
-  },
-  {
-    id: "dl-4",
-    poNumber: "A-PO-91040",
-    client: "Company A",
-    style: "Heavyweight Fleece Hoodie",
-    dueDate: "In 14 Days (Nov 18)",
-    daysRemaining: 14,
-    stage: "Final Steam & Packing",
-    urgency: "normal",
-  },
-];
-
-export const PRODUCTION_CHART_DATA: DailyProductionStat[] = [
-  { day: "Mon", target: 5200, actual: 5050, cutting: 5400, sewing: 4900, finishing: 4850 },
-  { day: "Tue", target: 5400, actual: 5350, cutting: 5600, sewing: 5200, finishing: 5250 },
-  { day: "Wed", target: 5600, actual: 5100, cutting: 5200, sewing: 5000, finishing: 5100 },
-  { day: "Thu", target: 5500, actual: 5650, cutting: 5800, sewing: 5550, finishing: 5600 },
-  { day: "Fri", target: 5800, actual: 5900, cutting: 6000, sewing: 5800, finishing: 5900 },
-  { day: "Sat", target: 4500, actual: 4700, cutting: 4800, sewing: 4600, finishing: 4700 },
-  { day: "Sun", target: 4000, actual: 3000, cutting: 3200, sewing: 2900, finishing: 2900 },
 ];

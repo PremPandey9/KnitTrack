@@ -22,6 +22,7 @@ export function ProgressBar({
     green: "bg-emerald-500",
     amber: "bg-amber-500",
     red: "bg-rose-500",
+    neutral: "bg-slate-400",
   }[status];
 
   return (

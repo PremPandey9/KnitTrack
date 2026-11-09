@@ -1,16 +1,27 @@
-export type OrderStatus = "green" | "amber" | "red";
+import type { DelayRiskResult } from "@/lib/delay-risk";
+import type { DelayRiskStatus } from "@/lib/delay-risk";
+
+export type OrderStatus = "green" | "amber" | "red" | "neutral";
+
+export interface Buyer {
+  id: string;
+  name: string;
+}
 
 export interface OrderItem {
   id: string;
   poNumber: string;
   client: string;
   style: string;
+  colour?: string;
+  buyerId?: string;
   orderQuantity: number;
   completedQuantity: number;
   status: OrderStatus;
-  statusLabel: "On Track" | "At Risk" | "Delayed";
-  currentStage: "Knitting" | "Dyeing" | "Cutting" | "Sewing" | "Finishing" | "Quality Check";
+  statusLabel: DelayRiskStatus | "Delayed";
+  currentStage: string;
   deliveryDate: string;
+  delayRisk?: DelayRiskResult;
 }
 
 export interface MetricSummary {
@@ -28,10 +39,9 @@ export interface DeadlineItem {
   client: string;
   style: string;
   dueDate: string;
-  daysRemaining: number;
+  daysRemaining: number | null;
   stage: string;
-  urgency: "critical" | "warning" | "normal";
-  bottleneckReason?: string;
+  delayRisk: DelayRiskResult;
 }
 
 export interface DailyProductionStat {

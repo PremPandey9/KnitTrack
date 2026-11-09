@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import {
   KnitTrackLogo,
   DashboardIcon,
@@ -11,28 +12,48 @@ import {
   SettingsIcon,
   CloseIcon,
 } from "@/components/icons/Icons";
+import { AppRole } from "@/lib/supabase/auth";
 
 interface SidebarProps {
+  fullName: string;
+  role: AppRole;
   currentTab: string;
   onSelectTab: (tab: string) => void;
+  delayAlertCount?: number;
   isOpenMobile: boolean;
   onCloseMobile: () => void;
 }
 
 export function Sidebar({
+  fullName,
+  role,
   currentTab,
   onSelectTab,
+  delayAlertCount = 0,
   isOpenMobile,
   onCloseMobile,
 }: SidebarProps) {
-  const navItems = [
-    { id: "dashboard", label: "Dashboard", icon: DashboardIcon },
-    { id: "orders", label: "Orders", icon: OrdersIcon, badge: "24" },
-    { id: "production", label: "Production Tracking", icon: ProductionIcon },
-    { id: "delays", label: "Delay Alerts", icon: DelayAlertIcon, badge: "3", badgeColor: "bg-rose-500/20 text-rose-300 border-rose-500/30" },
+  const navItems: Array<{
+    id: string;
+    label: string;
+    icon: React.ComponentType<{ className?: string }>;
+    href?: string;
+    badge?: string;
+    badgeColor?: string;
+  }> = [
+    { id: "dashboard", label: "Dashboard", icon: DashboardIcon, href: "/" },
+    { id: "orders", label: "Orders", icon: OrdersIcon, href: "/orders" },
+    { id: "production", label: "Production Tracking", icon: ProductionIcon, href: "/production-tracking" },
+    { id: "delays", label: "Delay Alerts", icon: DelayAlertIcon, badge: delayAlertCount > 0 ? String(delayAlertCount) : undefined, badgeColor: "bg-rose-500/20 text-rose-300 border-rose-500/30" },
     { id: "reports", label: "Reports", icon: ReportsIcon },
     { id: "settings", label: "Settings", icon: SettingsIcon },
+    { id: "buyer", label: "Buyer Portal", icon: DashboardIcon, href: "/buyer-dashboard" },
   ];
+  const visibleNavItems = role === "buyer"
+    ? navItems.filter((item) => item.id === "buyer")
+    : role === "supervisor"
+    ? navItems.filter((item) => item.id === "production")
+    : navItems.filter((item) => item.id !== "buyer");
 
   return (
     <>
@@ -83,19 +104,16 @@ export function Sidebar({
             Operations
           </div>
 
-          {navItems.map((item) => {
+          {visibleNavItems.map((item) => {
             const Icon = item.icon;
             const isActive = currentTab === item.id;
 
             return (
-              <button
-                suppressHydrationWarning
-                key={item.id}
-                onClick={() => {
-                  onSelectTab(item.id);
-                  onCloseMobile();
-                }}
-                className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium transition-all group ${
+              <div key={item.id}>
+                {item.href ? <Link
+                  href={item.href}
+                  onClick={() => onCloseMobile()}
+                  className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium transition-all group ${
                   isActive
                     ? "bg-blue-600/20 text-white border border-blue-500/30 shadow-xs shadow-blue-500/10"
                     : "text-slate-300 hover:bg-slate-800/60 hover:text-white"
@@ -122,13 +140,23 @@ export function Sidebar({
                     {item.badge}
                   </span>
                 )}
-              </button>
+                </Link> : <button
+                  suppressHydrationWarning
+                  onClick={() => {
+                    onSelectTab(item.id);
+                    onCloseMobile();
+                  }}
+                  className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium transition-all group ${isActive ? "bg-blue-600/20 text-white border border-blue-500/30 shadow-xs shadow-blue-500/10" : "text-slate-300 hover:bg-slate-800/60 hover:text-white"}`}
+                >
+                  <span className="flex items-center gap-3"><Icon className={`w-5 h-5 ${isActive ? "text-blue-400" : "text-slate-400 group-hover:text-slate-200"}`} /><span>{item.label}</span></span>
+                </button>}
+              </div>
             );
           })}
         </nav>
 
         {/* Bottom Shift Status Widget */}
-        <div className="p-3 mx-3 mb-4 rounded-xl bg-slate-900/90 border border-slate-800 text-xs">
+        {role !== "buyer" && <div className="p-3 mx-3 mb-4 rounded-xl bg-slate-900/90 border border-slate-800 text-xs">
           <div className="flex items-center justify-between mb-1.5">
             <span className="text-slate-400 font-medium">Floor Shift A</span>
             <span className="inline-flex items-center gap-1 text-[11px] text-emerald-400 font-semibold">
@@ -143,7 +171,7 @@ export function Sidebar({
           <div className="w-full bg-slate-800 rounded-full h-1.5 mt-2 overflow-hidden">
             <div className="bg-gradient-to-r from-blue-500 to-teal-400 h-full rounded-full" style={{ width: "94%" }} />
           </div>
-        </div>
+        </div>}
 
         {/* User Profile Mini Footer */}
         <div className="p-3 border-t border-slate-800/80 bg-[#080d1f] flex items-center justify-between">
@@ -152,8 +180,8 @@ export function Sidebar({
               PK
             </div>
             <div className="text-left">
-              <p className="text-xs font-semibold text-white leading-tight">Prem Kumar</p>
-              <p className="text-[11px] text-slate-400">Plant Supervisor</p>
+              <p className="text-xs font-semibold text-white leading-tight">{fullName}</p>
+              <p className="text-[11px] capitalize text-slate-400">{role}</p>
             </div>
           </div>
           <span className="w-2 h-2 rounded-full bg-emerald-400 ring-4 ring-emerald-500/20" title="Online" />

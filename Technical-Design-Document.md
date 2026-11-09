@@ -9,6 +9,22 @@
 
 ---
 
+## Contents
+
+1. [Project overview and problem statement](#1-project-overview-and-problem-statement)
+2. [Objectives and scope](#2-objectives-and-scope)
+3. [Technology stack and architecture](#3-technology-stack-and-architecture)
+4. [System architecture](#4-system-architecture)
+5. [Application modules and responsibilities](#5-application-modules-and-responsibilities)
+6. [User roles and permissions](#6-user-roles-and-permissions)
+7. [Database schema and relationships](#7-database-schema-and-relationships)
+8. [Authentication and Row Level Security](#8-authentication-and-row-level-security)
+9. [Main workflows](#9-main-workflows)
+10. [Testing and validation](#10-testing-and-validation)
+11. [Deployment approach](#11-deployment-approach)
+12. [Limitations and future enhancements](#12-limitations-and-future-enhancements)
+13. [Repository](#13-repository)
+
 ## 1. Project overview and problem statement
 
 KnitTrack is a web application for knitwear exporters to coordinate purchase orders, factory production progress, delivery milestones, and buyer visibility. Export production can involve several work stages and several organizations. Without a shared record, teams can have difficulty seeing which orders are active, how much finished output is available, what milestones are due, and what information a buyer is permitted to see.

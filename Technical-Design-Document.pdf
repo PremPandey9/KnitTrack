@@ -1,0 +1,517 @@
+%PDF-1.4
+%KNITTRACK
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R 21 0 R 23 0 R] /Count 9 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Length 1544 >>
+stream
+0.965 0.98 0.99 rg 0.965 0.98 0.99 RG 0.8 w 0 0 612 792 re B
+0.055 0.23 0.34 rg 0.055 0.23 0.34 RG 0.8 w 0 535 612 257 re B
+0.56 0.79 0.85 rg BT /F2 9 Tf 58 735 Td (KNITWEAR EXPORT OPERATIONS) Tj ET
+1 1 1 rg BT /F2 38 Tf 58 665 Td (KnitTrack) Tj ET
+0.86 0.94 0.97 rg BT /F1 20 Tf 58 625 Td (Technical Design Document) Tj ET
+0.37 0.72 0.79 RG 3 w 58 602 m 173 602 l S
+0.14 0.24 0.3 rg BT /F1 13 Tf 58 717 Td (A source-grounded design description of the current order, production,) Tj ET
+0.14 0.24 0.3 rg BT /F1 13 Tf 58 697 Td (buyer, and security workflows.) Tj ET
+0.28 0.47 0.55 rg BT /F2 8 Tf 58 500 Td (PROJECT) Tj ET
+0.1 0.2 0.27 rg BT /F1 11 Tf 58 483 Td (KnitTrack production order tracking) Tj ET
+0.28 0.47 0.55 rg BT /F2 8 Tf 58 447 Td (REPOSITORY) Tj ET
+0.1 0.2 0.27 rg BT /F1 11 Tf 58 430 Td (github.com/PremPandey9/KnitTrack) Tj ET
+0.28 0.47 0.55 rg BT /F2 8 Tf 58 394 Td (DOCUMENT DATE) Tj ET
+0.1 0.2 0.27 rg BT /F1 11 Tf 58 377 Td (November 9, 2026) Tj ET
+0.28 0.47 0.55 rg BT /F2 8 Tf 58 341 Td (STATUS) Tj ET
+0.1 0.2 0.27 rg BT /F1 11 Tf 58 324 Td (Current repository implementation) Tj ET
+0.77 0.84 0.87 RG 0.8 w 58 290 m 554 290 l S
+0.32 0.4 0.44 rg BT /F1 9 Tf 58 665 Td (Prepared for academic project submission. Features identified as unimplemented are explicitly marked as) Tj ET
+0.32 0.4 0.44 rg BT /F1 9 Tf 58 651 Td (limitations.) Tj ET
+0.76 0.83 0.87 RG 0.6 w 58 44 m 554 44 l S
+0.35 0.43 0.48 rg BT /F1 7 Tf 58 29 Td (KnitTrack  |  Current implementation design) Tj ET
+0.35 0.43 0.48 rg BT /F1 7 Tf 550 29 Td (1) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 428 >>
+stream
+0.23 0.43 0.53 rg BT /F2 7.3 Tf 58 761 Td (KNITTRACK  |  TECHNICAL DESIGN) Tj ET
+0.76 0.83 0.87 RG 0.6 w 58 750 m 554 750 l S
+0.05 0.27 0.4 rg BT /F2 16 Tf 58 696 Td (Technical Design Document) Tj ET
+0.17 0.48 0.62 RG 1.4 w 58 693 m 554 693 l S
+0.76 0.83 0.87 RG 0.6 w 58 44 m 554 44 l S
+0.35 0.43 0.48 rg BT /F1 7 Tf 58 29 Td (KnitTrack  |  Current implementation design) Tj ET
+0.35 0.43 0.48 rg BT /F1 7 Tf 550 29 Td (2) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 1738 >>
+stream
+0.23 0.43 0.53 rg BT /F2 7.3 Tf 58 761 Td (KNITTRACK  |  TECHNICAL DESIGN) Tj ET
+0.76 0.83 0.87 RG 0.6 w 58 750 m 554 750 l S
+0.05 0.27 0.4 rg BT /F2 16 Tf 58 696 Td (1. Project overview and problem statement) Tj ET
+0.17 0.48 0.62 RG 1.4 w 58 693 m 554 693 l S
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 58 671.8 Td (KnitTrack is a web application for knitwear exporters to coordinate purchase orders, factory production) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 58 658.644 Td (progress, delivery milestones, and buyer visibility. Export production can involve several work stages) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 58 645.488 Td (and several organizations. Without a shared record, teams can have difficulty seeing which orders are) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 58 632.3320000000001 Td (active, how much finished output is available, what milestones are due, and what information a buyer is) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 58 619.1760000000002 Td (permitted to see.) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 58 600.0200000000002 Td (KnitTrack provides a role-aware application backed by Supabase. Merchandisers manage orders and follow) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 58 586.8640000000003 Td (production, supervisors report daily work for assigned orders, and buyers view progress for their own) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 58 573.7080000000003 Td (company. The system preserves daily stage-throughput history separately from the order's finished-goods) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 58 560.5520000000004 Td (quantity.) Tj ET
+0.76 0.83 0.87 RG 0.6 w 58 44 m 554 44 l S
+0.35 0.43 0.48 rg BT /F1 7 Tf 58 29 Td (KnitTrack  |  Current implementation design) Tj ET
+0.35 0.43 0.48 rg BT /F1 7 Tf 550 29 Td (3) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 10 0 R >>
+endobj
+12 0 obj
+<< /Length 3084 >>
+stream
+0.23 0.43 0.53 rg BT /F2 7.3 Tf 58 761 Td (KNITTRACK  |  TECHNICAL DESIGN) Tj ET
+0.76 0.83 0.87 RG 0.6 w 58 750 m 554 750 l S
+0.05 0.27 0.4 rg BT /F2 16 Tf 58 696 Td (2. Objectives and scope) Tj ET
+0.17 0.48 0.62 RG 1.4 w 58 693 m 554 693 l S
+0.08 0.33 0.45 rg BT /F2 11 Tf 58 659 Td (Objectives) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 68 644.8 Td (- Keep production order and update data in a shared Supabase database.) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 68 628.644 Td (- Make merchandiser, supervisor, and buyer workflows available through one Next.js application.) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 68 612.488 Td (- Enforce access with authenticated server code and database Row Level Security \(RLS\).) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 68 596.3320000000001 Td (- Preserve daily production history while maintaining an order-level finished-goods total.) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 68 580.1760000000002 Td (- Give buyers read-only visibility into their own orders, progress, history, and TNA milestones.) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 68 564.0200000000002 Td (- Calculate transparent delay-risk indicators for merchandisers from finished-stage history.) Tj ET
+0.08 0.33 0.45 rg BT /F2 11 Tf 58 535.0640000000003 Td (In scope) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 68 520.8640000000003 Td (- Email/password authentication and profile-based roles.) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 68 504.70800000000037 Td (- Purchase order creation and supervisor assignment.) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 68 488.55200000000036 Td (- Daily production update entry and history.) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 68 472.39600000000036 Td (- TNA milestone management and buyer display.) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 68 456.24000000000035 Td (- Buyer-specific read-only dashboard.) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 68 440.08400000000034 Td (- Phase 1 delay-risk calculation for merchandisers.) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 68 423.92800000000034 Td (- Supabase baseline migrations and synthetic staging seed instructions.) Tj ET
+0.08 0.33 0.45 rg BT /F2 11 Tf 58 394.9720000000003 Td (Out of scope or not currently implemented) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 68 380.77200000000033 Td (- Production photo upload \(Storage is not configured; photo URL is stored as an empty string by the) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 68 367.6160000000003 Td (current database trigger\).) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 68 351.4600000000003 Td (- Tamil AI classification.) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 68 335.3040000000003 Td (- Offline update queueing.) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 68 319.1480000000003 Td (- Deployed Delay Alerts Phase 2 approval and buyer notification workflow. The Phase 2 SQL is a proposal) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 68 305.9920000000003 Td (and the feature flag must remain disabled.) Tj ET
+0.76 0.83 0.87 RG 0.6 w 58 44 m 554 44 l S
+0.35 0.43 0.48 rg BT /F1 7 Tf 58 29 Td (KnitTrack  |  Current implementation design) Tj ET
+0.35 0.43 0.48 rg BT /F1 7 Tf 550 29 Td (4) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 12 0 R >>
+endobj
+14 0 obj
+<< /Length 5590 >>
+stream
+0.23 0.43 0.53 rg BT /F2 7.3 Tf 58 761 Td (KNITTRACK  |  TECHNICAL DESIGN) Tj ET
+0.76 0.83 0.87 RG 0.6 w 58 750 m 554 750 l S
+0.05 0.27 0.4 rg BT /F2 16 Tf 58 696 Td (3. Technology stack and architecture) Tj ET
+0.17 0.48 0.62 RG 1.4 w 58 693 m 554 693 l S
+0.08 0.29 0.4 rg 0.8 0.86 0.89 RG 0.8 w 58 657 165.33333333333334 24 re B
+1 1 1 rg BT /F2 7.4 Tf 63 666.6 Td (Layer) Tj ET
+0.08 0.29 0.4 rg 0.8 0.86 0.89 RG 0.8 w 223.33333333333334 657 165.33333333333334 24 re B
+1 1 1 rg BT /F2 7.4 Tf 228.33333333333334 666.6 Td (Technology) Tj ET
+0.08 0.29 0.4 rg 0.8 0.86 0.89 RG 0.8 w 388.6666666666667 657 165.33333333333334 24 re B
+1 1 1 rg BT /F2 7.4 Tf 393.6666666666667 666.6 Td (Responsibility) Tj ET
+0.97 0.985 0.99 rg 0.8 0.86 0.89 RG 0.8 w 58 628.5 165.33333333333334 28.5 re B
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 63 642.6 Td (Web framework) Tj ET
+0.97 0.985 0.99 rg 0.8 0.86 0.89 RG 0.8 w 223.33333333333334 628.5 165.33333333333334 28.5 re B
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 228.33333333333334 642.6 Td (Next.js 16 App Router) Tj ET
+0.97 0.985 0.99 rg 0.8 0.86 0.89 RG 0.8 w 388.6666666666667 628.5 165.33333333333334 28.5 re B
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 393.6666666666667 642.6 Td (Server-rendered routes, layouts, loading) Tj ET
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 393.6666666666667 633.35 Td (boundaries, and server actions) Tj ET
+1 1 1 rg 0.8 0.86 0.89 RG 0.8 w 58 600 165.33333333333334 28.5 re B
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 63 614.1 Td (Language) Tj ET
+1 1 1 rg 0.8 0.86 0.89 RG 0.8 w 223.33333333333334 600 165.33333333333334 28.5 re B
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 228.33333333333334 614.1 Td (TypeScript) Tj ET
+1 1 1 rg 0.8 0.86 0.89 RG 0.8 w 388.6666666666667 600 165.33333333333334 28.5 re B
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 393.6666666666667 614.1 Td (Typed application code and server/client) Tj ET
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 393.6666666666667 604.85 Td (boundaries) Tj ET
+1 1 1 rg 0.8 0.86 0.89 RG 0.8 w 58 571.5 165.33333333333334 28.5 re B
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 63 585.6 Td (UI) Tj ET
+1 1 1 rg 0.8 0.86 0.89 RG 0.8 w 223.33333333333334 571.5 165.33333333333334 28.5 re B
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 228.33333333333334 585.6 Td (React 19, Tailwind CSS 4) Tj ET
+1 1 1 rg 0.8 0.86 0.89 RG 0.8 w 388.6666666666667 571.5 165.33333333333334 28.5 re B
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 393.6666666666667 585.6 Td (Interactive forms and responsive) Tj ET
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 393.6666666666667 576.35 Td (dashboard components) Tj ET
+0.97 0.985 0.99 rg 0.8 0.86 0.89 RG 0.8 w 58 543 165.33333333333334 28.5 re B
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 63 557.1 Td (Authentication) Tj ET
+0.97 0.985 0.99 rg 0.8 0.86 0.89 RG 0.8 w 223.33333333333334 543 165.33333333333334 28.5 re B
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 228.33333333333334 557.1 Td (Supabase Auth, @supabase/ssr) Tj ET
+0.97 0.985 0.99 rg 0.8 0.86 0.89 RG 0.8 w 388.6666666666667 543 165.33333333333334 28.5 re B
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 393.6666666666667 557.1 Td (Email/password sign-in and cookie-backed) Tj ET
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 393.6666666666667 547.85 Td (sessions) Tj ET
+0.97 0.985 0.99 rg 0.8 0.86 0.89 RG 0.8 w 58 514.5 165.33333333333334 28.5 re B
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 63 528.6 Td (Data access) Tj ET
+0.97 0.985 0.99 rg 0.8 0.86 0.89 RG 0.8 w 223.33333333333334 514.5 165.33333333333334 28.5 re B
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 228.33333333333334 528.6 Td (@supabase/supabase-js) Tj ET
+0.97 0.985 0.99 rg 0.8 0.86 0.89 RG 0.8 w 388.6666666666667 514.5 165.33333333333334 28.5 re B
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 393.6666666666667 528.6 Td (Authenticated database reads, writes, and) Tj ET
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 393.6666666666667 519.35 Td (RPC calls) Tj ET
+1 1 1 rg 0.8 0.86 0.89 RG 0.8 w 58 486 165.33333333333334 28.5 re B
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 63 500.1 Td (Database) Tj ET
+1 1 1 rg 0.8 0.86 0.89 RG 0.8 w 223.33333333333334 486 165.33333333333334 28.5 re B
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 228.33333333333334 500.1 Td (Supabase PostgreSQL) Tj ET
+1 1 1 rg 0.8 0.86 0.89 RG 0.8 w 388.6666666666667 486 165.33333333333334 28.5 re B
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 393.6666666666667 500.1 Td (Relational data, constraints, functions,) Tj ET
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 393.6666666666667 490.85 Td (triggers, grants, and RLS) Tj ET
+1 1 1 rg 0.8 0.86 0.89 RG 0.8 w 58 457.5 165.33333333333334 28.5 re B
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 63 471.6 Td (Validation) Tj ET
+1 1 1 rg 0.8 0.86 0.89 RG 0.8 w 223.33333333333334 457.5 165.33333333333334 28.5 re B
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 228.33333333333334 471.6 Td (Node test runner, ESLint, TypeScript) Tj ET
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 228.33333333333334 462.35 Td (compiler) Tj ET
+1 1 1 rg 0.8 0.86 0.89 RG 0.8 w 388.6666666666667 457.5 165.33333333333334 28.5 re B
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 393.6666666666667 471.6 Td (Unit/integration checks, linting, and) Tj ET
+0.12 0.17 0.21 rg BT /F1 7.4 Tf 393.6666666666667 462.35 Td (type validation) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 58 439.3 Td (The browser receives only the Supabase project URL and publishable/legacy anon key. The application does) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 58 426.144 Td (not use a service-role key. Server components and actions create a cookie-bound Supabase client so) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 58 412.988 Td (database requests carry the signed-in user's session and remain subject to RLS.) Tj ET
+0.76 0.83 0.87 RG 0.6 w 58 44 m 554 44 l S
+0.35 0.43 0.48 rg BT /F1 7 Tf 58 29 Td (KnitTrack  |  Current implementation design) Tj ET
+0.35 0.43 0.48 rg BT /F1 7 Tf 550 29 Td (5) Tj ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 14 0 R >>
+endobj
+16 0 obj
+<< /Length 5483 >>
+stream
+0.23 0.43 0.53 rg BT /F2 7.3 Tf 58 761 Td (KNITTRACK  |  TECHNICAL DESIGN) Tj ET
+0.76 0.83 0.87 RG 0.6 w 58 750 m 554 750 l S
+0.05 0.27 0.4 rg BT /F2 16 Tf 58 696 Td (4. System architecture) Tj ET
+0.17 0.48 0.62 RG 1.4 w 58 693 m 554 693 l S
+0.08 0.33 0.45 rg BT /F2 11 Tf 58 659 Td (System architecture diagram) Tj ET
+0.9 0.95 0.97 rg 0.3 0.52 0.62 RG 0.8 w 58 617 140 30 re B
+0.08 0.23 0.31 rg BT /F2 8.2 Tf 64 632 Td (Merchandiser) Tj ET
+0.9 0.95 0.97 rg 0.3 0.52 0.62 RG 0.8 w 220 617 140 30 re B
+0.08 0.23 0.31 rg BT /F2 8.2 Tf 226 632 Td (Supervisor) Tj ET
+0.9 0.95 0.97 rg 0.3 0.52 0.62 RG 0.8 w 382 617 140 30 re B
+0.08 0.23 0.31 rg BT /F2 8.2 Tf 388 632 Td (Buyer) Tj ET
+0.24 0.49 0.59 RG 1.2 w 306 611 m 306 591 l S
+0.24 0.49 0.59 RG 1.2 w 306 591 m 302 596 l S
+0.24 0.49 0.59 RG 1.2 w 306 591 m 310 596 l S
+0.28 0.39 0.44 rg BT /F1 7.2 Tf 70 593 Td (HTTPS / App Router) Tj ET
+0.84 0.93 0.96 rg 0.3 0.52 0.62 RG 0.8 w 156 539 300 42 re B
+0.08 0.23 0.31 rg BT /F2 8.2 Tf 162 560 Td (Next.js App Router - server pages, actions and responsive UI) Tj ET
+0.24 0.49 0.59 RG 1.2 w 306 532 m 306 512 l S
+0.24 0.49 0.59 RG 1.2 w 306 512 m 302 517 l S
+0.24 0.49 0.59 RG 1.2 w 306 512 m 310 517 l S
+0.28 0.39 0.44 rg BT /F1 7.2 Tf 70 514 Td (Cookie-bound authenticated Supabase client) Tj ET
+0.92 0.96 0.98 rg 0.3 0.52 0.62 RG 0.8 w 82 458 210 45 re B
+0.08 0.23 0.31 rg BT /F2 8.2 Tf 88 480.5 Td (Supabase Auth - identity and session) Tj ET
+0.92 0.96 0.98 rg 0.3 0.52 0.62 RG 0.8 w 320 458 210 45 re B
+0.08 0.23 0.31 rg BT /F2 8.2 Tf 326 480.5 Td (PostgreSQL - RLS, grants, RPCs and triggers) Tj ET
+0.91 0.96 0.92 rg 0.3 0.52 0.62 RG 0.8 w 78 407 456 35 re B
+0.08 0.23 0.31 rg BT /F2 8.2 Tf 84 424.5 Td (buyers | profiles | orders | production_updates | tna_milestones) Tj ET
+1 0.96 0.86 rg 0.3 0.52 0.62 RG 0.8 w 118 355 376 39 re B
+0.08 0.23 0.31 rg BT /F2 8.2 Tf 124 374.5 Td (Phase 1 delay-risk calculation - server-fetched order and history) Tj ET
+0.12 0.17 0.21 rg BT /F1 8 Tf 58 336 Td (RLS remains active for application queries. Production progress is changed through the authorized RPC and database) Tj ET
+0.12 0.17 0.21 rg BT /F1 8 Tf 58 325 Td (trigger path.) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 58 300.8 Td (flowchart LR M[Merchandiser browser] -->|HTTPS / App Router| N[Next.js application] S[Supervisor browser]) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 58 287.644 Td (-->|HTTPS / App Router| N B[Buyer browser] -->|HTTPS / App Router| N N -->|Cookie-bound Supabase client|) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 58 274.488 Td (A[Supabase Auth] N -->|Authenticated PostgREST / RPC| P[\(Supabase PostgreSQL\)] P --> R[RLS policies and) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 58 261.332 Td (grants] P --> F[RPCs and triggers] P --> T[Orders, updates, milestones, profiles, buyers] N --> D[Phase 1) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 58 248.176 Td (delay-risk calculation] T --> D) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 230.41999999999996 Td (The Next.js application chooses pages and actions based on the verified profile role. PostgreSQL independently restricts) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 220.41999999999996 Td (rows and write paths. The production update RPC and database triggers validate update attribution and maintain order) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 210.41999999999996 Td (progress atomically. Delay-risk calculation runs on server-fetched data and does not write production quantities.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 200.41999999999996 Td (## 5. Application modules and responsibilities) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 190.41999999999996 Td (| Module | Primary responsibility |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 180.41999999999996 Td (| --- | --- |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 170.41999999999996 Td (| src/app/sign-in and src/app/actions/auth.ts | Email/password sign-in, profile validation, role landing redirects, and) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 160.41999999999996 Td (sign-out |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 150.41999999999996 Td (| src/lib/supabase/server.ts | Cookie-bound Supabase server client used by server components/actions |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 140.41999999999996 Td (| src/lib/supabase/client.ts | Browser Supabase client for permitted browser-side use |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 130.41999999999996 Td (| src/lib/supabase/auth.ts | Auth user verification, profile loading, role validation, and requireRole guards |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 120.41999999999997 Td (| proxy.ts | Session refresh and supervisor navigation redirect handling |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 110.41999999999997 Td (| src/app/page.tsx, src/lib/supabase/orders.ts | Merchandiser dashboard data, actual order metrics, buyer names, and delay) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 100.41999999999997 Td (calculations |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 90.41999999999997 Td (| src/app/orders, src/lib/supabase/orders-page.ts | Orders route and order list filtering/presentation data |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 80.41999999999997 Td (| src/app/actions/orders.ts | Merchandiser-only order creation, supervisor assignment, and final-stage configuration) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 70.41999999999997 Td (action |) Tj ET
+0.76 0.83 0.87 RG 0.6 w 58 44 m 554 44 l S
+0.35 0.43 0.48 rg BT /F1 7 Tf 58 29 Td (KnitTrack  |  Current implementation design) Tj ET
+0.35 0.43 0.48 rg BT /F1 7 Tf 550 29 Td (6) Tj ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 16 0 R >>
+endobj
+18 0 obj
+<< /Length 9180 >>
+stream
+0.23 0.43 0.53 rg BT /F2 7.3 Tf 58 761 Td (KNITTRACK  |  TECHNICAL DESIGN) Tj ET
+0.76 0.83 0.87 RG 0.6 w 58 750 m 554 750 l S
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 722.2 Td (| src/app/production-tracking, src/lib/supabase/production.ts | Production orders, history, available supervisor list, and) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 712.2 Td (role-scoped data |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 702.2 Td (| src/app/actions/production.ts | Validates and submits daily updates through submit_production_update RPC |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 692.2 Td (| src/app/buyer-dashboard, src/lib/supabase/buyer-portal.ts | Buyer-scoped company, orders, updates, and milestones |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 682.2 Td (| src/lib/delay-risk.ts | Pure Phase 1 delay-risk calculation and status tone mapping |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 672.2 Td (| src/components/dashboard | Dashboard, order, production tracking, buyer portal, forms, navigation, and status) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 662.2 Td (presentation |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 652.2 Td (| supabase/migrations | Baseline relational schema and database security/progress logic |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 642.2 Td (| supabase/seed/staging_demo.sql | One-time synthetic staging data seed; requires pre-created Supabase Auth identities and) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 632.2 Td (psql |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 622.2 Td (## 6. User roles and permissions) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 612.2 Td (| Role | Allowed capabilities | Restrictions |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 602.2 Td (| --- | --- | --- |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 592.2 Td (| Merchandiser | View/manage orders, create orders, assign/unassign supervisors, configure final stage before finished) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 582.2 Td (output exists, manage TNA milestones, review production history, and inspect delay-risk results | Cannot directly update) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 572.2 Td (order progress fields; progress changes through the protected production RPC/trigger path |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 562.2 Td (| Supervisor | View assigned orders and their associated production history; submit daily production updates with notes |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 552.2 Td (Cannot view unassigned production orders, change buyer/order ownership, assign themselves, manage buyer records, or) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 542.2 Td (approve delay alerts |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 532.2 Td (| Buyer | Read own company profile, orders, production updates, and TNA milestones | Cannot create, update, assign, or) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 522.2 Td (delete production records; cannot see another buyer's data or unapproved Phase 2 alerts |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 512.2 Td (The role is loaded from profiles after auth.getUser\(\) verifies the Supabase Auth identity. A buyer profile without a buyer) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 502.2 Td (assignment is rejected. UI visibility is supplementary: route guards, server actions, database grants, and RLS policies) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 492.2 Td (provide enforcement.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 482.2 Td (## 7. Database schema and relationships) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 472.2 Td (The baseline is designed for a new Supabase project. It creates five application tables. UUID identity fields use) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 462.2 Td (PostgreSQL UUIDs; date fields are SQL date; event timestamps use timestamptz.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 452.2 Td (| Table | Important columns | Purpose and constraints |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 442.2 Td (| --- | --- | --- |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 432.2 Td (| buyers | id, company_name, country, contact_email, created_at | Buyer company records; nonblank company name |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 422.2 Td (| profiles | id, full_name, role, buyer_id, created_at | One application profile per auth.users identity; roles are) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 412.2 Td (merchandiser, supervisor, buyer; buyer role requires a buyer link |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 402.2 Td (| orders | id, po_number, buyer_id, style_name, colour, total_quantity, completed_quantity, current_stage,) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 392.2 Td (ex_factory_date, assigned_supervisor_id, final_production_stage, created_at | Purchase order; unique PO number; positive) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 382.2 Td (total, completed quantity between zero and total; stage values constrained; final stage defaults to Finishing and remains) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 372.2 Td (nullable for legacy/unconfigured orders |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 362.2 Td (| production_updates | id, order_id, stage, quantity_completed, issue_note, photo_url, update_date, supervisor_id,) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 352.2 Td (created_at | Daily throughput event at a stage; positive integer quantity; issue note limited to 2,000 characters; photo) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 342.2 Td (URL currently empty |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 332.2 Td (| tna_milestones | id, order_id, milestone_name, planned_date, actual_date, status, created_at | Time and action milestone) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 322.2 Td (associated with an order |) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 312.2 Td (Relationships:) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 302.2 Td (- One buyer has many orders; each order references one buyer.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 292.2 Td (- A buyer profile references its buyer company; merchandiser and supervisor profiles have no buyer assignment.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 282.2 Td (- Profiles and supervisor assignment refer to Supabase Auth UUIDs.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 272.2 Td (- One order has many production updates and many TNA milestones.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 262.2 Td (- An update's supervisor_id records the supervisor actor; merchandiser-originated updates use NULL.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 252.2 Td (- Foreign-key deletion rules protect history: orders referenced by production updates or milestones cannot be deleted \(ON) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 242.2 Td (DELETE RESTRICT\). Buyer rows referenced by profiles/orders are similarly protected. Removing an Auth identity cascades its) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 232.2 Td (profile and nulls supervisor references where configured.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 222.2 Td (Indexes support role/profile lookups, buyer and supervisor order lists, ex-factory dates, order update history, and) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 212.2 Td (planned milestone sorting.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 202.2 Td (## 8. Authentication and Row Level Security) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 192.2 Td (1. The sign-in server action calls Supabase signInWithPassword using the cookie-bound server client.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 182.2 Td (2. It looks up profiles by the authenticated Auth UUID, rejects missing/invalid roles and invalid buyer profiles, then) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 172.2 Td (redirects to the role's home route.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 162.2 Td (3. Shared requireProfile and requireRole helpers verify the current Auth user and load trusted profile data for protected) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 152.2 Td (pages/actions.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 142.2 Td (4. The session refresh proxy propagates updated cookies. Supervisors are directed to production tracking when opening) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 132.2 Td (excluded navigation routes.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 122.2 Td (5. RLS is enabled on all five public application tables. Policies scope buyers to their own company, supervisors to) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 112.2 Td (assigned orders, and merchandisers to management data.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 102.2 Td (6. Table grants are column-scoped where necessary. Authenticated users cannot directly write orders.completed_quantity or) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 92.2 Td (orders.current_stage; the database trigger updates those values as part of an authorized production update.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 82.2 Td (7. submit_production_update is a SECURITY INVOKER RPC. It checks the actor role, stage, positive whole quantity, update) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 72.2 Td (date, note length, order access, and supervisor assignment. A row-locking validation trigger and progress trigger keep) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 62.2 Td (history insertion and order progress in one transaction.) Tj ET
+0.76 0.83 0.87 RG 0.6 w 58 44 m 554 44 l S
+0.35 0.43 0.48 rg BT /F1 7 Tf 58 29 Td (KnitTrack  |  Current implementation design) Tj ET
+0.35 0.43 0.48 rg BT /F1 7 Tf 550 29 Td (7) Tj ET
+endstream
+endobj
+19 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 18 0 R >>
+endobj
+20 0 obj
+<< /Length 9126 >>
+stream
+0.23 0.43 0.53 rg BT /F2 7.3 Tf 58 761 Td (KNITTRACK  |  TECHNICAL DESIGN) Tj ET
+0.76 0.83 0.87 RG 0.6 w 58 750 m 554 750 l S
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 722.2 Td (8. configure_order_final_stage is a narrow SECURITY DEFINER function that validates auth.uid\(\) and merchandiser role,) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 712.2 Td (locks the order, and refuses a changed final stage after completed quantity is positive. The function uses a pinned search) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 702.2 Td (path and is executable by authenticated users; its internal role check is authoritative.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 692.2 Td (The core security migration also defines current_user_role\(\) and current_user_buyer_id\(\) helpers with pinned search paths) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 682.2 Td (and restricted execution grants. Deployment guidance requires migration execution as the trusted Supabase postgres owner) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 672.2 Td (and verification on the hosted project; the disposable test fixture is not a substitute for hosted verification.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 662.2 Td (## 9. Main workflows) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 652.2 Td (### 9.1 Order creation) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 642.2 Td (1. The merchandiser opens the create-order form. Buyer options are fetched from buyers and display company_name while) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 632.2 Td (retaining the buyer UUID.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 622.2 Td (2. The server action requires the merchandiser role and validates required text, existing buyer UUID, unique PO number,) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 612.2 Td (positive whole quantity, valid ex-factory date, and supported initial/final stage values.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 602.2 Td (3. It inserts the order through the authenticated Supabase server client. The database's unique and check constraints) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 592.2 Td (remain the final validation boundary.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 582.2 Td (4. Final stage defaults to Finishing. The form allows a merchandiser to choose a supported stage.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 572.2 Td (5. The server revalidates the dashboard and orders paths. Optional TNA milestones are not part of the current order insert) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 562.2 Td (transaction unless separately created through the milestone workflow.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 552.2 Td (### 9.2 Production updates) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 542.2 Td (1. Merchandisers can select accessible orders; supervisors receive only orders assigned to their Auth UUID.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 532.2 Td (2. The user submits order, stage, daily quantity, date, and optional issue note. Photo attachment is visibly unavailable) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 522.2 Td (until Storage is configured.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 512.2 Td (3. The server action validates inputs and, for supervisors, checks the selected order assignment before calling the RPC.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 502.2 Td (4. The RPC records a production update. Daily quantity_completed is stage throughput, not a cumulative total.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 492.2 Td (5. A database trigger updates orders.current_stage and increments orders.completed_quantity only when the update stage) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 482.2 Td (matches the configured final production stage. Intermediate-stage work is retained in history without adding to finished) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 472.2 Td (goods.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 462.2 Td (6. Row locking plus database constraints protect the final quantity from exceeding the order total. The server revalidates) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 452.2 Td (production tracking, dashboard, and order views after success.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 442.2 Td (### 9.3 Buyer portal) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 432.2 Td (1. A buyer signs in and is redirected to /buyer-dashboard.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 422.2 Td (2. Server code requires the buyer role and derives the buyer UUID from the authenticated user's profile; it does not trust) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 412.2 Td (a browser-provided buyer ID.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 402.2 Td (3. The portal loads the company name, orders, production updates, and TNA milestones through the cookie-bound Supabase) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 392.2 Td (client. Queries are additionally constrained by RLS.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 382.2 Td (4. The buyer sees order quantity/progress, stage, ex-factory/final stage, daily update history and notes, valid photo URLs) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 372.2 Td (if any, and milestone planned/actual dates and status.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 362.2 Td (5. The portal is read-only. Invalid buyer profile assignment prevents dashboard access.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 352.2 Td (### 9.4 Phase 1 delay-risk calculation) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 342.2 Td (The pure calculateDelayRisk\(\) function uses the order's total and completed finished-goods quantities, final stage,) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 332.2 Td (ex-factory date, and production update history. It is shown to merchandisers in the dashboard and order-related views;) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 322.2 Td (buyer notification/approval is not implemented.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 312.2 Td (- Remaining quantity is max\(0, total_quantity - completed_quantity\).) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 302.2 Td (- The observation window is 14 calendar days in Asia/Kolkata, including weekends; future-dated updates are ignored.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 292.2 Td (- Only updates whose trimmed, case-insensitive stage matches final_production_stage count. Multiple entries on the same) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 282.2 Td (date are summed.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 272.2 Td (- Observed daily output is total eligible output divided by 14. Required daily output is remaining quantity divided by) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 262.2 Td (available calendar days; due date is included as a production day.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 252.2 Td (- At least five distinct output dates spanning seven calendar days are required for pace classification.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 242.2 Td (- Complete: no remaining quantity. Overdue: past due date with remaining quantity. Pace ratio below 0.80 is High Risk;) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 232.2 Td (0.80 to below 1.00 is At Risk; 1.00 to below 1.10 is Watch; at least 1.10 is On Track. Insufficient or invalid data is) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 222.2 Td (Review Needed.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 212.2 Td (- A NULL final stage is Review Needed. Existing final stage changes after quantity has been counted are rejected by the) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 202.2 Td (configuration RPC; historical rates are never used to reset or rewrite finished quantity.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 192.2 Td (Phase 2 signed candidate recording and approval is not enabled or deployed. Buyers do not receive these Phase 1) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 182.2 Td (calculations as approved alerts.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 172.2 Td (## 10. Testing and validation) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 162.2 Td (The repository defines these application checks:) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.2 Tf 58 142.8 Td (npm test npm run test:delay-risk npm run lint npx tsc --noEmit npm run build) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 125.044 Td (npm test runs the Node.js test suite; the focused delay-risk command runs its dedicated tests. The production build uses) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 115.044 Td (Next.js webpack build mode.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 105.044 Td (The separate supabase/tests/core-baseline runner uses a disposable PostgreSQL 17 fixture, fixed synthetic identities, and) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 95.044 Td (Docker Compose. The project owner reported that the complete baseline integration suite passed. It tests baseline) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 85.044 Td (migrations, synthetic seed behavior, role/RLS access, RPC validation, final-stage behavior, quantity attribution, and) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 75.044 Td (Phase 2 compatibility. It does not prove hosted Supabase behavior. A separate disposable Delay Alerts Phase 2 harness) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 65.044 Td (exists for SQL proposal testing, but the Phase 2 proposal is not deployed.) Tj ET
+0.76 0.83 0.87 RG 0.6 w 58 44 m 554 44 l S
+0.35 0.43 0.48 rg BT /F1 7 Tf 58 29 Td (KnitTrack  |  Current implementation design) Tj ET
+0.35 0.43 0.48 rg BT /F1 7 Tf 550 29 Td (8) Tj ET
+endstream
+endobj
+21 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 20 0 R >>
+endobj
+22 0 obj
+<< /Length 6888 >>
+stream
+0.23 0.43 0.53 rg BT /F2 7.3 Tf 58 761 Td (KNITTRACK  |  TECHNICAL DESIGN) Tj ET
+0.76 0.83 0.87 RG 0.6 w 58 750 m 554 750 l S
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 722.2 Td (For staging acceptance, verify all three roles against the staging project, especially buyer isolation, supervisor) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 712.2 Td (assignment, update attribution, finished quantity behavior, and milestone reads. Do not infer test success from a static) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 702.2 Td (review alone.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 692.2 Td (## 11. Deployment approach) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 682.2 Td (1. Use separate Supabase projects and deployment environments for staging and production.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 672.2 Td (2. Install dependencies with npm ci; use Node.js 20.9 or newer.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 662.2 Td (3. Configure NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY \(legacy anon key is a supported fallback\)) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 652.2 Td (for the target environment before building. These public variables are embedded in the client build. Do not promote a) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 642.2 Td (build made for another Supabase project.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 632.2 Td (4. Apply 20261109090001_core_schema.sql, then 20261109090002_core_security.sql to a new project as the documented trusted) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 622.2 Td (migration owner. They are a baseline, not a replayable upgrade path.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 612.2 Td (5. For staging only, create the five documented synthetic Auth users and run supabase/seed/staging_demo.sql with psql in) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 602.2 Td (one session. The seed uses psql-specific commands and is not SQL Editor input. Do not run it against production.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 592.2 Td (6. Run automated checks, disposable integration tests, then hosted staging role and RLS checks. Keep production secrets) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 582.2 Td (and database separate.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 572.2 Td (7. Deploy the Next.js build using the chosen host's protected environment settings. A self-hosted deployment can use npm) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 562.2 Td (run start after npm run build.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 552.2 Td (8. Keep DELAY_ALERTS_ENABLED unset or false. Do not provision DELAY_ALERT_HMAC_KEY_V1 or apply the Phase 2 proposal for) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 542.2 Td (this submission.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 532.2 Td (The app does not need a Supabase service-role key. .env* files are ignored except .env.example; never commit real) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 522.2 Td (environment files.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 512.2 Td (## 12. Limitations and future enhancements) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 502.2 Td (### Current limitations) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 492.2 Td (- Production image upload is unavailable because no Supabase Storage bucket and policies are configured; current updates) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 482.2 Td (store an empty photo URL.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 472.2 Td (- Tamil AI classification is not present in the current source tree.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 462.2 Td (- Offline queueing is not present in the current source tree.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 452.2 Td (- Delay Alerts Phase 2 database migration and buyer approval workflow are not deployed; keep the feature disabled.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 442.2 Td (- Existing orders with a NULL final stage remain Review Needed for delay-risk calculation until a merchandiser configures) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 432.2 Td (the stage.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 422.2 Td (- Changing final production stage after finished units have been counted requires a separately reviewed reconciliation) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 412.2 Td (process.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 402.2 Td (- The baseline migrations target a new project and are not a general migration strategy for an existing production schema.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 392.2 Td (- TNA milestone workflow exists, but it is a basic planned/actual/status record rather than a full dependency or) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 382.2 Td (escalation engine.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 372.2 Td (### Possible future enhancements) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 362.2 Td (- Configure Storage with narrow upload/read policies and add secure image validation/retention.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 352.2 Td (- Deploy Phase 2 only after separate migration approval, hosted staging validation, signing-key provisioning, and explicit) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 342.2 Td (rollout approval.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 332.2 Td (- Add buyer-approved delay alerts after the auditable workflow is deployed and reviewed.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 322.2 Td (- Evaluate Tamil language classification and offline supervisor workflows as separate, tested projects.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 312.2 Td (- Add richer TNA dependencies, reporting exports, and operational audit dashboards.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 302.2 Td (These are proposed enhancements only, not claims about the current application.) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 292.2 Td (## 13. Repository) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 282.2 Td (Project source: https://github.com/PremPandey9/KnitTrack \(https://github.com/PremPandey9/KnitTrack\)) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 272.2 Td (## Source references) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 262.2 Td (- README.md and deployment.md) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 252.2 Td (- supabase/migrations/20261109090001_core_schema.sql) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 242.2 Td (- supabase/migrations/20261109090002_core_security.sql) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 232.2 Td (- supabase/migrations/README.md) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 222.2 Td (- supabase/seed/staging_demo.sql) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 212.2 Td (- src/lib/supabase/auth.ts, src/lib/supabase/orders.ts, src/lib/supabase/production.ts, src/lib/supabase/buyer-portal.ts) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 202.2 Td (- src/app/actions/auth.ts, src/app/actions/orders.ts, src/app/actions/production.ts) Tj ET
+0.12 0.3 0.4 rg BT /F3 7.8 Tf 66 192.2 Td (- src/lib/delay-risk.ts) Tj ET
+0.76 0.83 0.87 RG 0.6 w 58 44 m 554 44 l S
+0.35 0.43 0.48 rg BT /F1 7 Tf 58 29 Td (KnitTrack  |  Current implementation design) Tj ET
+0.35 0.43 0.48 rg BT /F1 7 Tf 550 29 Td (9) Tj ET
+endstream
+endobj
+23 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 22 0 R >>
+endobj
+xref
+0 24
+0000000000 65535 f 
+0000000020 00000 n 
+0000000069 00000 n 
+0000000181 00000 n 
+0000000278 00000 n 
+0000000380 00000 n 
+0000000475 00000 n 
+0000002071 00000 n 
+0000002217 00000 n 
+0000002696 00000 n 
+0000002842 00000 n 
+0000004633 00000 n 
+0000004781 00000 n 
+0000007918 00000 n 
+0000008066 00000 n 
+0000013709 00000 n 
+0000013857 00000 n 
+0000019393 00000 n 
+0000019541 00000 n 
+0000028774 00000 n 
+0000028922 00000 n 
+0000038101 00000 n 
+0000038249 00000 n 
+0000045190 00000 n 
+trailer
+<< /Size 24 /Root 1 0 R >>
+startxref
+45338
+%%EOF
